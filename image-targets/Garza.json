@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 0,
+    "width": 900,
+    "height": 1201,
+    "isRotated": false,
+    "originalWidth": 901,
+    "originalHeight": 1201
+  },
+  "imagePath": "image-targets/Garza_luminance.jpg",
+  "metadata": null,
+  "name": "Garza",
+  "resources": {
+    "originalImage": "Garza_original.jpg",
+    "croppedImage": "Garza_cropped.jpg",
+    "thumbnailImage": "Garza_thumbnail.jpg",
+    "luminanceImage": "Garza_luminance.jpg"
+  },
+  "created": 1791849008898,
+  "updated": 1791849428515
+}

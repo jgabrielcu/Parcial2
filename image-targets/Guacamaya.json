@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 125,
+    "width": 750,
+    "height": 1000,
+    "isRotated": false,
+    "originalWidth": 1000,
+    "originalHeight": 1000
+  },
+  "imagePath": "image-targets/Guacamaya_luminance.jpg",
+  "metadata": null,
+  "name": "Guacamaya",
+  "resources": {
+    "originalImage": "Guacamaya_original.jpg",
+    "croppedImage": "Guacamaya_cropped.jpg",
+    "thumbnailImage": "Guacamaya_thumbnail.jpg",
+    "luminanceImage": "Guacamaya_luminance.jpg"
+  },
+  "created": 1791849014078,
+  "updated": 1791849408801
+}

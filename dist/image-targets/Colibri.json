@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 0,
+    "width": 901,
+    "height": 1201,
+    "isRotated": false,
+    "originalWidth": 901,
+    "originalHeight": 1201
+  },
+  "imagePath": "image-targets/Colibri_luminance.jpg",
+  "metadata": null,
+  "name": "Colibri",
+  "resources": {
+    "originalImage": "Colibri_original.jpg",
+    "croppedImage": "Colibri_cropped.jpg",
+    "thumbnailImage": "Colibri_thumbnail.jpg",
+    "luminanceImage": "Colibri_luminance.jpg"
+  },
+  "created": 1791849057081,
+  "updated": 1791849421609
+}

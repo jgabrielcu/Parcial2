@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 31,
+    "width": 1207,
+    "height": 1610,
+    "isRotated": false,
+    "originalWidth": 1270,
+    "originalHeight": 1610
+  },
+  "imagePath": "image-targets/Paloma_luminance.png",
+  "metadata": null,
+  "name": "Paloma",
+  "resources": {
+    "originalImage": "Paloma_original.png",
+    "croppedImage": "Paloma_cropped.png",
+    "thumbnailImage": "Paloma_thumbnail.png",
+    "luminanceImage": "Paloma_luminance.png"
+  },
+  "created": 1791849017476,
+  "updated": 1791849416141
+}
