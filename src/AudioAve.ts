@@ -1,90 +1,50 @@
-
 import * as ecs from '@8thwall/ecs'
 
 ecs.registerComponent({
   name: 'AudioAve',
 
   schema: {
-    boton: ecs.eid,
-    reproductor: ecs.eid,
-    audioUrl: ecs.string,
-    nombreImageTarget: ecs.string,
+    boton: ecs.eid,              // Botón de Canto asignado en el Inspector
+    reproductor: ecs.eid,         // Entidad contenedora o target del ave
+    audioUrl: ecs.string,         // Ruta del archivo de audio (ej. assets/sonidos/paloma.mp3)
+    nombreImageTarget: ecs.string, // Nombre del objetivo de imagen
   },
 
   schemaDefaults: {
-    audioUrl: 'assets/canto_ave1.mp3',
+    audioUrl: '',
     nombreImageTarget: '',
   },
 
   add: (world, component) => {
-    const {
-      boton,
-      reproductor,
-      audioUrl,
-      nombreImageTarget,
-    } = component.schema
+    const {boton, audioUrl} = component.schema
 
-    console.log('[AudioAve] Componente iniciado')
-    console.log('[AudioAve] Archivo:', audioUrl)
+    if (!boton || !audioUrl) {
+      console.warn('[AudioAve] Falta configurar el botón o la URL de audio en el Inspector.')
+      return
+    }
 
-    // Asignar explícitamente el MP3 al reproductor.
-    ecs.Audio.set(world, reproductor, {
-      url: audioUrl,
-      volume: 1,
-      loop: false,
-      paused: true,
-      pitch: 1,
-      positional: false,
+    // Instancia de audio única para ESTE componente
+    const audio = new Audio(audioUrl)
+
+    // Detener y reiniciar audio si se presiona el botón exacto
+    const playAudio = () => {
+      audio.currentTime = 0
+      audio.play().catch((err) => {
+        console.warn('[AudioAve] Error al reproducir audio:', err)
+      })
+    }
+
+    // Escuchador 1: UI Click de 8th Wall Studio (específico para el botón asignado)
+    world.events.addListener(boton, ecs.input.UI_CLICK, () => {
+      playAudio()
     })
 
-    // Ocultar el botón al comenzar.
-    ecs.Hidden.set(world, boton, {})
-
-    // Mostrarlo al detectar la imagen correspondiente.
-    world.events.addListener(
-      world.events.globalId,
-      'reality.imagefound',
-      (event) => {
-        const data = event.data as {name: string}
-        console.log('[AudioAve] Imagen detectada:', data.name)
-
-        if (data.name === nombreImageTarget) {
-          ecs.Hidden.remove(world, boton)
-        }
+    // Escuchador 2: Verificación de Toque Táctil en pantalla
+    world.events.addListener(component.eid, ecs.input.SCREEN_TOUCH_START, (evt: any) => {
+      const touchedEntity = evt.data?.target || evt.target
+      if (touchedEntity === boton) {
+        playAudio()
       }
-    )
-
-    // Ocultar el botón y detener el audio al perder la imagen.
-    world.events.addListener(
-      world.events.globalId,
-      'reality.imagelost',
-      (event) => {
-        const data = event.data as {name: string}
-
-        if (data.name === nombreImageTarget) {
-          ecs.Hidden.set(world, boton, {})
-          ecs.Audio.set(world, reproductor, {
-            paused: true,
-          })
-        }
-      }
-    )
-
-    // Reproducir al pulsar el botón.
-    world.events.addListener(
-      boton,
-      ecs.input.UI_CLICK,
-      () => {
-        console.log('[AudioAve] Botón pulsado')
-
-        ecs.Audio.set(world, reproductor, {
-          url: audioUrl,
-          volume: 1,
-          loop: false,
-          paused: false,
-          positional: false,
-        })
-      }
-    )
+    })
   },
 })
