@@ -2691,6 +2691,815 @@
       },
       "name": "Alimentar",
       "order": 1
+    },
+    "f3ff0d6b-cfa1-4ee8-bf60-1c1f026ce6a0": {
+      "id": "f3ff0d6b-cfa1-4ee8-bf60-1c1f026ce6a0",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "type": "overlay",
+        "width": "80%",
+        "height": "8%",
+        "background": "#2e9e5b",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": "",
+        "left": "10%",
+        "bottom": "5%",
+        "right": ""
+      },
+      "name": "botonIniciar",
+      "order": 4.848807680577286
+    },
+    "743ce856-f073-4af6-9292-1514fe1b0471": {
+      "id": "743ce856-f073-4af6-9292-1514fe1b0471",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f3ff0d6b-cfa1-4ee8-bf60-1c1f026ce6a0",
+      "components": {},
+      "name": "Text",
+      "ui": {
+        "width": 245,
+        "height": 41,
+        "text": "Iniciar quiz",
+        "color": "#ffffff",
+        "fontSize": 22,
+        "verticalTextAlign": "center"
+      },
+      "order": 1.0456767738011914
+    },
+    "0afe4d5e-ee92-4229-a472-fcf92e19f7e2": {
+      "id": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "flexDirection": "column",
+        "width": "100%",
+        "height": "72%",
+        "type": "overlay",
+        "background": "#ffffff",
+        "backgroundOpacity": 0,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "flexWrap": "nowrap",
+        "ignoreRaycast": true,
+        "gap": 12,
+        "position": "absolute",
+        "top": "14%",
+        "left": 0,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "panelQuiz",
+      "order": 5.8923025912458264
+    },
+    "029b0489-7572-4f1b-a458-6b34f2fb7784": {
+      "id": "029b0489-7572-4f1b-a458-6b34f2fb7784",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "flexDirection": "column",
+        "width": "100%",
+        "height": "38%",
+        "type": "overlay",
+        "background": "#ffffff",
+        "backgroundOpacity": 0,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "flexWrap": "nowrap",
+        "ignoreRaycast": true,
+        "gap": 12,
+        "position": "absolute",
+        "top": "31%",
+        "left": 0,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "panelFinal",
+      "order": 7.364342326430418
+    },
+    "8341a386-8ed4-424c-b635-0d052f833902": {
+      "id": "8341a386-8ed4-424c-b635-0d052f833902",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2",
+      "components": {},
+      "ui": {
+        "background": "#000000",
+        "backgroundOpacity": 0.65,
+        "width": "90%",
+        "height": "20%",
+        "text": "Sample Text",
+        "color": "#ffffff",
+        "fontSize": 20,
+        "type": "3d",
+        "verticalTextAlign": "center"
+      },
+      "name": "textoPregunta",
+      "order": 1.5045714985366794
+    },
+    "d45f4cf8-c8a3-4531-a1bf-d2779e993eed": {
+      "id": "d45f4cf8-c8a3-4531-a1bf-d2779e993eed",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "width": "90%",
+        "height": "6%",
+        "text": "Sample Text",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "type": "3d",
+        "verticalTextAlign": "center"
+      },
+      "name": "textoPuntaje\t",
+      "order": 3.242410123896635,
+      "parentId": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2"
+    },
+    "ffe0a1bd-b855-46c9-b248-48d7c398b076": {
+      "id": "ffe0a1bd-b855-46c9-b248-48d7c398b076",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "background": "#2b3a55",
+        "backgroundOpacity": 1,
+        "width": "90%",
+        "height": "12%",
+        "text": "Sample Text",
+        "color": "#ffffff",
+        "fontSize": 18,
+        "type": "3d",
+        "verticalTextAlign": "center",
+        "borderRadius": 12
+      },
+      "name": "opcion A",
+      "order": 5.114940371802509,
+      "parentId": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2"
+    },
+    "7a229123-186f-4d30-88ab-84d7f948ac89": {
+      "id": "7a229123-186f-4d30-88ab-84d7f948ac89",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "background": "#2b3a55",
+        "backgroundOpacity": 1,
+        "width": "90%",
+        "height": "12%",
+        "text": "Sample Text",
+        "color": "#ffffff",
+        "fontSize": 18,
+        "type": "3d",
+        "verticalTextAlign": "center",
+        "borderRadius": 12
+      },
+      "name": "opcion B",
+      "order": 6.368709162513086,
+      "parentId": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2"
+    },
+    "90d60627-4440-4229-ba75-d30739121f4f": {
+      "id": "90d60627-4440-4229-ba75-d30739121f4f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "background": "#2b3a55",
+        "backgroundOpacity": 1,
+        "width": "90%",
+        "height": "12%",
+        "text": "Sample Text",
+        "color": "#ffffff",
+        "fontSize": 18,
+        "type": "3d",
+        "verticalTextAlign": "center",
+        "borderRadius": 12
+      },
+      "name": "opcion C",
+      "order": 8.337375686140222,
+      "parentId": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2"
+    },
+    "7c7957fe-846c-440f-b302-1aefa7d3cbc5": {
+      "id": "7c7957fe-846c-440f-b302-1aefa7d3cbc5",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "background": "#000000",
+        "backgroundOpacity": 0.65,
+        "width": "90%",
+        "height": "20%",
+        "text": "Sample Text",
+        "color": "#ffffff",
+        "fontSize": 15,
+        "type": "3d",
+        "verticalTextAlign": "center",
+        "borderRadius": 0
+      },
+      "name": "textoFeedback",
+      "order": 9.880585071673567,
+      "parentId": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2"
+    },
+    "328dccc3-b9b0-4a97-ba7b-4493221370c1": {
+      "id": "328dccc3-b9b0-4a97-ba7b-4493221370c1",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "029b0489-7572-4f1b-a458-6b34f2fb7784",
+      "components": {},
+      "ui": {
+        "background": "#000000",
+        "backgroundOpacity": 0.65,
+        "width": "90%",
+        "height": "55%",
+        "text": "Sample Text",
+        "color": "#ffffff",
+        "fontSize": 22,
+        "type": "3d",
+        "verticalTextAlign": "center"
+      },
+      "name": "textoFinal",
+      "order": 2.4641017009351778
+    },
+    "e3a7b42b-d088-4725-98ec-028ce18c23ee": {
+      "id": "e3a7b42b-d088-4725-98ec-028ce18c23ee",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "background": "#2b3a55",
+        "backgroundOpacity": 1,
+        "width": "80%",
+        "height": "20%",
+        "text": "Reintentar",
+        "color": "#ffffff",
+        "fontSize": 22,
+        "type": "3d",
+        "verticalTextAlign": "center",
+        "borderRadius": 12
+      },
+      "name": "botonReintentar",
+      "order": 4.458967694391043,
+      "parentId": "029b0489-7572-4f1b-a458-6b34f2fb7784"
+    },
+    "0be108c9-759c-4daa-ae37-b8d807a59d51": {
+      "id": "0be108c9-759c-4daa-ae37-b8d807a59d51",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "name": "SfxQuiz",
+      "order": 8.787393830731009,
+      "audio": {
+        "paused": true
+      }
+    },
+    "95c10b05-7e34-4e05-b922-f4f8f8cd44e9": {
+      "id": "95c10b05-7e34-4e05-b922-f4f8f8cd44e9",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "c75672d5-2e5c-4cab-ad1c-ec6d066e7528": {
+          "id": "c75672d5-2e5c-4cab-ad1c-ec6d066e7528",
+          "name": "QuizManager",
+          "parameters": {
+            "nombreImageTarget": "Colibri",
+            "botonIniciar": {
+              "type": "entity",
+              "id": "f3ff0d6b-cfa1-4ee8-bf60-1c1f026ce6a0"
+            },
+            "panelQuiz": {
+              "type": "entity",
+              "id": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2"
+            },
+            "textoPregunta": {
+              "type": "entity",
+              "id": "8341a386-8ed4-424c-b635-0d052f833902"
+            },
+            "opcionA": {
+              "type": "entity",
+              "id": "ffe0a1bd-b855-46c9-b248-48d7c398b076"
+            },
+            "opcionB": {
+              "type": "entity",
+              "id": "7a229123-186f-4d30-88ab-84d7f948ac89"
+            },
+            "opcionC": {
+              "type": "entity",
+              "id": "90d60627-4440-4229-ba75-d30739121f4f"
+            },
+            "textoFeedback": {
+              "type": "entity",
+              "id": "7c7957fe-846c-440f-b302-1aefa7d3cbc5"
+            },
+            "textoPuntaje": {
+              "type": "entity",
+              "id": "d45f4cf8-c8a3-4531-a1bf-d2779e993eed"
+            },
+            "panelFinal": {
+              "type": "entity",
+              "id": "029b0489-7572-4f1b-a458-6b34f2fb7784"
+            },
+            "textoFinal": {
+              "type": "entity",
+              "id": "328dccc3-b9b0-4a97-ba7b-4493221370c1"
+            },
+            "botonReintentar": {
+              "type": "entity",
+              "id": "e3a7b42b-d088-4725-98ec-028ce18c23ee"
+            },
+            "sfx": {
+              "type": "entity",
+              "id": "0be108c9-759c-4daa-ae37-b8d807a59d51"
+            },
+            "sfxCorrecto": "assets/sound/sfx_correcto.mp3",
+            "sfxIncorrecto": "assets/sound/sfx_incorrecto.mp3",
+            "sfxFinal": "assets/sound/sfx_final.mp3"
+          }
+        }
+      },
+      "name": "QuizColibri",
+      "order": 10.448564380598386
+    },
+    "a6584844-5cde-4121-8fa7-be535765eba7": {
+      "id": "a6584844-5cde-4121-8fa7-be535765eba7",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "c75672d5-2e5c-4cab-ad1c-ec6d066e7528": {
+          "id": "c75672d5-2e5c-4cab-ad1c-ec6d066e7528",
+          "name": "QuizManager",
+          "parameters": {
+            "nombreImageTarget": "Paloma",
+            "botonIniciar": {
+              "type": "entity",
+              "id": "f3ff0d6b-cfa1-4ee8-bf60-1c1f026ce6a0"
+            },
+            "panelQuiz": {
+              "type": "entity",
+              "id": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2"
+            },
+            "textoPregunta": {
+              "type": "entity",
+              "id": "8341a386-8ed4-424c-b635-0d052f833902"
+            },
+            "opcionA": {
+              "type": "entity",
+              "id": "ffe0a1bd-b855-46c9-b248-48d7c398b076"
+            },
+            "opcionB": {
+              "type": "entity",
+              "id": "7a229123-186f-4d30-88ab-84d7f948ac89"
+            },
+            "opcionC": {
+              "type": "entity",
+              "id": "90d60627-4440-4229-ba75-d30739121f4f"
+            },
+            "textoFeedback": {
+              "type": "entity",
+              "id": "7c7957fe-846c-440f-b302-1aefa7d3cbc5"
+            },
+            "textoPuntaje": {
+              "type": "entity",
+              "id": "d45f4cf8-c8a3-4531-a1bf-d2779e993eed"
+            },
+            "panelFinal": {
+              "type": "entity",
+              "id": "029b0489-7572-4f1b-a458-6b34f2fb7784"
+            },
+            "textoFinal": {
+              "type": "entity",
+              "id": "328dccc3-b9b0-4a97-ba7b-4493221370c1"
+            },
+            "botonReintentar": {
+              "type": "entity",
+              "id": "e3a7b42b-d088-4725-98ec-028ce18c23ee"
+            },
+            "sfx": {
+              "type": "entity",
+              "id": "0be108c9-759c-4daa-ae37-b8d807a59d51"
+            },
+            "sfxCorrecto": "assets/sound/sfx_correcto.mp3",
+            "sfxIncorrecto": "assets/sound/sfx_incorrecto.mp3",
+            "sfxFinal": "assets/sound/sfx_final.mp3"
+          }
+        }
+      },
+      "name": "QuizPaloma",
+      "order": 11.872599923021514
+    },
+    "93468aa9-9fa3-4a4b-8c04-c40fcd655550": {
+      "id": "93468aa9-9fa3-4a4b-8c04-c40fcd655550",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "c75672d5-2e5c-4cab-ad1c-ec6d066e7528": {
+          "id": "c75672d5-2e5c-4cab-ad1c-ec6d066e7528",
+          "name": "QuizManager",
+          "parameters": {
+            "nombreImageTarget": "Guacamaya",
+            "botonIniciar": {
+              "type": "entity",
+              "id": "f3ff0d6b-cfa1-4ee8-bf60-1c1f026ce6a0"
+            },
+            "panelQuiz": {
+              "type": "entity",
+              "id": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2"
+            },
+            "textoPregunta": {
+              "type": "entity",
+              "id": "8341a386-8ed4-424c-b635-0d052f833902"
+            },
+            "opcionA": {
+              "type": "entity",
+              "id": "ffe0a1bd-b855-46c9-b248-48d7c398b076"
+            },
+            "opcionB": {
+              "type": "entity",
+              "id": "7a229123-186f-4d30-88ab-84d7f948ac89"
+            },
+            "opcionC": {
+              "type": "entity",
+              "id": "90d60627-4440-4229-ba75-d30739121f4f"
+            },
+            "textoFeedback": {
+              "type": "entity",
+              "id": "7c7957fe-846c-440f-b302-1aefa7d3cbc5"
+            },
+            "textoPuntaje": {
+              "type": "entity",
+              "id": "d45f4cf8-c8a3-4531-a1bf-d2779e993eed"
+            },
+            "panelFinal": {
+              "type": "entity",
+              "id": "029b0489-7572-4f1b-a458-6b34f2fb7784"
+            },
+            "textoFinal": {
+              "type": "entity",
+              "id": "328dccc3-b9b0-4a97-ba7b-4493221370c1"
+            },
+            "botonReintentar": {
+              "type": "entity",
+              "id": "e3a7b42b-d088-4725-98ec-028ce18c23ee"
+            },
+            "sfx": {
+              "type": "entity",
+              "id": "0be108c9-759c-4daa-ae37-b8d807a59d51"
+            },
+            "sfxCorrecto": "assets/sound/sfx_correcto.mp3",
+            "sfxIncorrecto": "assets/sound/sfx_incorrecto.mp3",
+            "sfxFinal": "assets/sound/sfx_final.mp3"
+          }
+        }
+      },
+      "name": "QuizGuacamaya",
+      "order": 13.451466057040898
+    },
+    "653e132a-691a-48a8-8881-982285aee88c": {
+      "id": "653e132a-691a-48a8-8881-982285aee88c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "c75672d5-2e5c-4cab-ad1c-ec6d066e7528": {
+          "id": "c75672d5-2e5c-4cab-ad1c-ec6d066e7528",
+          "name": "QuizManager",
+          "parameters": {
+            "nombreImageTarget": "Garza",
+            "botonIniciar": {
+              "type": "entity",
+              "id": "f3ff0d6b-cfa1-4ee8-bf60-1c1f026ce6a0"
+            },
+            "panelQuiz": {
+              "type": "entity",
+              "id": "0afe4d5e-ee92-4229-a472-fcf92e19f7e2"
+            },
+            "textoPregunta": {
+              "type": "entity",
+              "id": "8341a386-8ed4-424c-b635-0d052f833902"
+            },
+            "opcionA": {
+              "type": "entity",
+              "id": "ffe0a1bd-b855-46c9-b248-48d7c398b076"
+            },
+            "opcionB": {
+              "type": "entity",
+              "id": "7a229123-186f-4d30-88ab-84d7f948ac89"
+            },
+            "opcionC": {
+              "type": "entity",
+              "id": "90d60627-4440-4229-ba75-d30739121f4f"
+            },
+            "textoFeedback": {
+              "type": "entity",
+              "id": "7c7957fe-846c-440f-b302-1aefa7d3cbc5"
+            },
+            "textoPuntaje": {
+              "type": "entity",
+              "id": "d45f4cf8-c8a3-4531-a1bf-d2779e993eed"
+            },
+            "panelFinal": {
+              "type": "entity",
+              "id": "029b0489-7572-4f1b-a458-6b34f2fb7784"
+            },
+            "textoFinal": {
+              "type": "entity",
+              "id": "328dccc3-b9b0-4a97-ba7b-4493221370c1"
+            },
+            "botonReintentar": {
+              "type": "entity",
+              "id": "e3a7b42b-d088-4725-98ec-028ce18c23ee"
+            },
+            "sfx": {
+              "type": "entity",
+              "id": "0be108c9-759c-4daa-ae37-b8d807a59d51"
+            },
+            "sfxCorrecto": "assets/sound/sfx_correcto.mp3",
+            "sfxIncorrecto": "assets/sound/sfx_incorrecto.mp3",
+            "sfxFinal": "assets/sound/sfx_final.mp3"
+          }
+        }
+      },
+      "name": "QuizGarza",
+      "order": 14.883178167704598
     }
   },
   "activeCamera": "58bc1039-a0d3-4cc0-a14e-0d2c2c49bbad"
