@@ -2801,9 +2801,9 @@
         "ignoreRaycast": true,
         "gap": 12,
         "position": "absolute",
-        "top": "14%",
+        "top": 0,
         "left": 0,
-        "bottom": "",
+        "bottom": 0,
         "right": ""
       },
       "name": "panelQuiz",
@@ -2882,7 +2882,8 @@
         "color": "#ffffff",
         "fontSize": 20,
         "type": "3d",
-        "verticalTextAlign": "center"
+        "verticalTextAlign": "center",
+        "ignoreRaycast": true
       },
       "name": "textoPregunta",
       "order": 1.5045714985366794
@@ -2915,7 +2916,8 @@
         "color": "#ffffff",
         "fontSize": 16,
         "type": "3d",
-        "verticalTextAlign": "center"
+        "verticalTextAlign": "center",
+        "ignoreRaycast": true
       },
       "name": "textoPuntaje\t",
       "order": 3.242410123896635,
@@ -3063,7 +3065,8 @@
         "fontSize": 15,
         "type": "3d",
         "verticalTextAlign": "center",
-        "borderRadius": 0
+        "borderRadius": 0,
+        "ignoreRaycast": true
       },
       "name": "textoFeedback",
       "order": 9.880585071673567,
@@ -3100,7 +3103,8 @@
         "color": "#ffffff",
         "fontSize": 22,
         "type": "3d",
-        "verticalTextAlign": "center"
+        "verticalTextAlign": "center",
+        "ignoreRaycast": true
       },
       "name": "textoFinal",
       "order": 2.4641017009351778
@@ -3250,8 +3254,7 @@
         }
       },
       "name": "QuizColibri",
-      "order": 10.448564380598386,
-      "disabled": true
+      "order": 10.448564380598386
     },
     "a6584844-5cde-4121-8fa7-be535765eba7": {
       "id": "a6584844-5cde-4121-8fa7-be535765eba7",
@@ -3334,8 +3337,7 @@
         }
       },
       "name": "QuizPaloma",
-      "order": 11.872599923021514,
-      "disabled": true
+      "order": 11.872599923021514
     },
     "93468aa9-9fa3-4a4b-8c04-c40fcd655550": {
       "id": "93468aa9-9fa3-4a4b-8c04-c40fcd655550",
@@ -3418,8 +3420,7 @@
         }
       },
       "name": "QuizGuacamaya",
-      "order": 13.451466057040898,
-      "disabled": true
+      "order": 13.451466057040898
     },
     "653e132a-691a-48a8-8881-982285aee88c": {
       "id": "653e132a-691a-48a8-8881-982285aee88c",
@@ -3502,8 +3503,7 @@
         }
       },
       "name": "QuizGarza",
-      "order": 14.883178167704598,
-      "disabled": true
+      "order": 14.883178167704598
     }
   },
   "activeCamera": "58bc1039-a0d3-4cc0-a14e-0d2c2c49bbad"

@@ -120,6 +120,7 @@ ecs.registerComponent({
     }
 
     const responder = (i: number) => {
+      console.log('[Quiz] toque en opcion', i, 'activo:', activo)
       if (!activo || bloqueado) return
       bloqueado = true
 
