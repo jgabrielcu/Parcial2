@@ -243,7 +243,13 @@
       "geometry": null,
       "material": null,
       "parentId": "aba2fb53-85f2-4028-b8df-0a243547e116",
-      "components": {},
+      "components": {
+        "cf4c332c-ef48-4bdf-92aa-627c594c0da5": {
+          "id": "cf4c332c-ef48-4bdf-92aa-627c594c0da5",
+          "name": "rotacion-modelo-component",
+          "parameters": {}
+        }
+      },
       "gltfModel": {
         "src": {
           "type": "asset",
@@ -279,7 +285,18 @@
       "geometry": null,
       "material": null,
       "parentId": "c84b4608-e098-42d7-9eaa-062f1077cd4a",
-      "components": {},
+      "components": {
+        "753009d8-6100-4a26-a9dd-b0c929f0d1be": {
+          "id": "753009d8-6100-4a26-a9dd-b0c929f0d1be",
+          "name": "rotacion-modelo-component",
+          "parameters": {
+            "targetEntity": {
+              "type": "entity",
+              "id": "9cfb0a59-0190-44ac-b47a-e902b34871a0"
+            }
+          }
+        }
+      },
       "gltfModel": {
         "src": {
           "type": "asset",
@@ -315,7 +332,18 @@
       "geometry": null,
       "material": null,
       "parentId": "d8abfc64-2447-41db-a950-c88115260ce2",
-      "components": {},
+      "components": {
+        "c8e31401-5d8e-4dbe-9268-0b72f4810319": {
+          "id": "c8e31401-5d8e-4dbe-9268-0b72f4810319",
+          "name": "rotacion-modelo-component",
+          "parameters": {
+            "targetEntity": {
+              "type": "entity",
+              "id": "c916fa00-b046-422f-b612-39bf36afe2da"
+            }
+          }
+        }
+      },
       "gltfModel": {
         "src": {
           "type": "asset",
@@ -330,90 +358,23 @@
         "castShadow": true
       }
     },
-    "c3e75835-01ef-4ee9-8dfc-caf61c6f84dd": {
-      "id": "c3e75835-01ef-4ee9-8dfc-caf61c6f84dd",
-      "position": [
-        0,
-        0,
-        0.4159880184470699
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.20000000000000015,
-        0.20000000000000015,
-        0.20000000000000015
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "ba1d47de-40b9-4138-a728-bef6fe121dbe",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Aves/hummingbird_unpack.glb"
-        },
-        "animationClip": "ArmatureAction.001",
-        "loop": true
-      },
-      "name": "hummingbird_unpack.glb",
-      "order": 1.8453079809764037,
-      "shadow": {
-        "castShadow": true
-      }
-    },
-    "9414e6d4-ccd1-4706-b868-fd5491e5a72e": {
-      "id": "9414e6d4-ccd1-4706-b868-fd5491e5a72e",
-      "position": [
-        -2.4501900739915463,
-        1.825912468276928,
-        1.743038343784701
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.999999999999999,
-        0.999999999999999,
-        0.999999999999999
-      ],
-      "geometry": {
-        "type": "sphere",
-        "radius": 0.5
-      },
-      "material": {
-        "type": "basic",
-        "color": "#FFFFFF"
-      },
-      "parentId": "c3e75835-01ef-4ee9-8dfc-caf61c6f84dd",
-      "components": {},
-      "name": "CabezaColibri",
-      "order": 1.2187830813503209
-    },
     "e178cdbd-ef07-4460-ba4e-d93116beb557": {
       "id": "e178cdbd-ef07-4460-ba4e-d93116beb557",
       "position": [
-        -0.34094373410584705,
-        0.13916758353316802,
-        0.23709696206965125
+        0.403064835518407,
+        0.23658489200638566,
+        1.0353365471119917
       ],
       "rotation": [
         0,
+        0.7071067811865475,
         0,
-        0,
-        0.9999999999999998
+        0.7071067811865476
       ],
       "scale": [
-        0.050000000000000024,
-        0.050000000000000024,
-        0.050000000000000024
+        0.08500000000000005,
+        0.08500000000000005,
+        0.08500000000000005
       ],
       "geometry": {
         "type": "sphere",
@@ -423,7 +384,7 @@
         "type": "basic",
         "color": "#FFFFFF"
       },
-      "parentId": "9cfb0a59-0190-44ac-b47a-e902b34871a0",
+      "parentId": "c84b4608-e098-42d7-9eaa-062f1077cd4a",
       "components": {
         "00faf6da-95f1-4940-af33-1d88f594fb42": {
           "id": "00faf6da-95f1-4940-af33-1d88f594fb42",
@@ -441,25 +402,25 @@
         }
       },
       "name": "Volar",
-      "order": 1.2284899517204777
+      "order": 11.538111997248395
     },
     "6b58257c-09d2-41a7-a616-cd4ed10f317a": {
       "id": "6b58257c-09d2-41a7-a616-cd4ed10f317a",
       "position": [
-        0.3252343545121419,
+        -0.671448583684195,
         0,
-        -0.39496975510835053
+        0.12733549269180233
       ],
       "rotation": [
         0,
+        0.7071067811865475,
         0,
-        0,
-        1
+        0.7071067811865476
       ],
       "scale": [
-        0.05,
-        0.05,
-        0.05
+        0.08500000000000003,
+        0.08500000000000003,
+        0.08500000000000003
       ],
       "geometry": {
         "type": "sphere",
@@ -469,7 +430,7 @@
         "type": "basic",
         "color": "#FFFFFF"
       },
-      "parentId": "9cfb0a59-0190-44ac-b47a-e902b34871a0",
+      "parentId": "c84b4608-e098-42d7-9eaa-062f1077cd4a",
       "components": {
         "3e72bb02-76e4-4aa8-9753-9ec8dc677682": {
           "id": "3e72bb02-76e4-4aa8-9753-9ec8dc677682",
@@ -487,7 +448,7 @@
         }
       },
       "name": "Caja",
-      "order": 3.1690958817591177
+      "order": 11.54523366129803
     },
     "91e7724e-e49d-4963-8fff-aa8a0fe33443": {
       "id": "91e7724e-e49d-4963-8fff-aa8a0fe33443",
@@ -498,14 +459,14 @@
       ],
       "rotation": [
         0,
-        0.7071067811865475,
+        -0.7071067811865475,
         0,
         0.7071067811865476
       ],
       "scale": [
-        11.764705882352933,
-        11.764705882352933,
-        11.764705882352933
+        10,
+        10,
+        10
       ],
       "geometry": null,
       "material": null,
@@ -515,7 +476,7 @@
         "flexDirection": "row",
         "width": 23,
         "height": 5,
-        "text": "VUELO",
+        "text": "Volar",
         "color": "#ffffff",
         "fontSize": 5,
         "type": "3d",
@@ -528,20 +489,20 @@
     "51ffa2cb-4752-4226-828a-ce907f559bc7": {
       "id": "51ffa2cb-4752-4226-828a-ce907f559bc7",
       "position": [
-        0,
-        0,
-        0.03955612789906704
+        0.889251052658774,
+        1.2514708583563703,
+        0
       ],
       "rotation": [
         0,
+        -0.1736481776669304,
         0,
-        0,
-        1
+        0.9848077530122086
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.8,
+        0.8000000000000002,
+        0.8000000000000002
       ],
       "geometry": null,
       "material": null,
@@ -550,7 +511,7 @@
       "ui": {
         "borderColor": "#ffffff",
         "borderWidth": 1,
-        "type": "overlay",
+        "type": "3d",
         "width": 147,
         "height": 36,
         "background": "#0061a9",
@@ -588,9 +549,9 @@
       ],
       "rotation": [
         0,
+        -0.1736481776669304,
         0,
-        0,
-        1
+        0.9848077530122086
       ],
       "scale": [
         1,
@@ -625,9 +586,9 @@
       ],
       "rotation": [
         0,
+        -0.1736481776669304,
         0,
-        0,
-        1
+        0.9848077530122086
       ],
       "scale": [
         1,
@@ -695,20 +656,20 @@
     "69cc0c3c-e3a1-429e-af3b-0cff101b5da0": {
       "id": "69cc0c3c-e3a1-429e-af3b-0cff101b5da0",
       "position": [
-        0,
-        0,
-        0.03955612789906704
+        0.889251052658774,
+        1.6514708583563706,
+        0
       ],
       "rotation": [
         0,
+        -0.1736481776669304,
         0,
-        0,
-        1
+        0.9848077530122086
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.8,
+        0.8000000000000002,
+        0.8000000000000002
       ],
       "geometry": null,
       "material": null,
@@ -724,7 +685,7 @@
             },
             "ficha": {
               "type": "entity",
-              "id": "53d309a1-3cdd-4b6b-8829-ecfb91f809a9"
+              "id": "85eba9b5-a5a7-46dd-a6ff-46507101c39a"
             }
           }
         }
@@ -732,7 +693,7 @@
       "ui": {
         "borderColor": "#ffffff",
         "borderWidth": 1,
-        "type": "overlay",
+        "type": "3d",
         "width": 147,
         "height": 36,
         "background": "#0061a9",
@@ -755,7 +716,8 @@
         "top": "",
         "left": "",
         "bottom": "",
-        "right": ""
+        "right": "",
+        "stackingOrder": 100
       },
       "name": "Info1",
       "order": 8.683966617034919,
@@ -922,7 +884,8 @@
         "left": "",
         "bottom": "",
         "right": "",
-        "borderRadius": 40
+        "borderRadius": 40,
+        "ignoreRaycast": true
       },
       "name": "Imagen1",
       "order": 10.248649094477479,
@@ -931,8 +894,8 @@
     "43221580-bd35-4af8-b9dc-1bfb6db4e72c": {
       "id": "43221580-bd35-4af8-b9dc-1bfb6db4e72c",
       "position": [
-        0,
-        0.866,
+        2.220446049250313e-16,
+        1.2339659653532393,
         0
       ],
       "rotation": [
@@ -942,9 +905,9 @@
         0.7071067811865476
       ],
       "scale": [
-        11.764705882352937,
-        11.764705882352937,
-        11.764705882352937
+        10,
+        10,
+        10
       ],
       "geometry": null,
       "material": null,
@@ -954,7 +917,7 @@
         "flexDirection": "row",
         "width": 23,
         "height": 5,
-        "text": "CIRCULO",
+        "text": "Giro",
         "color": "#ffffff",
         "fontSize": 5,
         "type": "3d",
@@ -967,20 +930,20 @@
     "6dfbc92e-0128-4e76-a0ab-7abe246ebca5": {
       "id": "6dfbc92e-0128-4e76-a0ab-7abe246ebca5",
       "position": [
-        -0.6106433955166026,
-        0.7574054604467544,
-        -1.0688561793443192
+        0.42745037686162224,
+        0.5301838223127281,
+        1.2277305963381693
       ],
       "rotation": [
         0,
+        1,
         0,
-        0,
-        1
+        -6.123233995736766e-17
       ],
       "scale": [
-        0.09,
-        0.09,
-        0.09
+        0.063,
+        0.063,
+        0.063
       ],
       "geometry": {
         "type": "sphere",
@@ -990,7 +953,7 @@
         "type": "basic",
         "color": "#FFFFFF"
       },
-      "parentId": "c916fa00-b046-422f-b612-39bf36afe2da",
+      "parentId": "d8abfc64-2447-41db-a950-c88115260ce2",
       "components": {
         "8e761e1e-a5da-44ee-9f3a-5f4d7ac3c1e0": {
           "id": "8e761e1e-a5da-44ee-9f3a-5f4d7ac3c1e0",
@@ -1007,26 +970,26 @@
           }
         }
       },
-      "name": "Esfera",
-      "order": 1.075028773624346
+      "name": "Vuelo",
+      "order": 9.514942930853074
     },
     "76c46b7f-dfac-4851-907e-a43add3bdd48": {
       "id": "76c46b7f-dfac-4851-907e-a43add3bdd48",
       "position": [
         0,
-        0.866,
+        1.314660047650431,
         0
       ],
       "rotation": [
         0,
+        1,
         0,
-        0,
-        1
+        -6.123233995736766e-17
       ],
       "scale": [
-        11.765,
-        11.765000000000002,
-        11.765000000000002
+        12,
+        12,
+        12
       ],
       "geometry": null,
       "material": null,
@@ -1035,7 +998,7 @@
         "flexDirection": "row",
         "width": 23,
         "height": 5,
-        "text": "VUELO",
+        "text": "Vuelo\n",
         "color": "#ffffff",
         "fontSize": 5,
         "type": "3d",
@@ -1049,20 +1012,20 @@
     "2902c7c0-6ec5-4e3f-a25d-26eecf843024": {
       "id": "2902c7c0-6ec5-4e3f-a25d-26eecf843024",
       "position": [
-        1.1553144879969044,
-        0.2125054226638266,
-        0.28545803409996173
+        -0.8087201415978331,
+        0.14875379586467863,
+        0.2797106469271726
       ],
       "rotation": [
         0,
+        1,
         0,
-        0,
-        0.9999999999999998
+        -6.123233995736766e-17
       ],
       "scale": [
-        0.09,
-        0.09,
-        0.09
+        0.063,
+        0.063,
+        0.063
       ],
       "geometry": {
         "type": "sphere",
@@ -1072,7 +1035,7 @@
         "type": "basic",
         "color": "#FFFFFF"
       },
-      "parentId": "c916fa00-b046-422f-b612-39bf36afe2da",
+      "parentId": "d8abfc64-2447-41db-a950-c88115260ce2",
       "components": {
         "f10435a2-f97e-4fdf-943c-b27b947ff71f": {
           "id": "f10435a2-f97e-4fdf-943c-b27b947ff71f",
@@ -1089,21 +1052,21 @@
           }
         }
       },
-      "name": "Esfera (1)",
-      "order": 2.4950650315145886
+      "name": "Alimentar",
+      "order": 9.614659575399248
     },
     "16033b0d-c143-48c0-96b6-822df5ea7b50": {
       "id": "16033b0d-c143-48c0-96b6-822df5ea7b50",
       "position": [
         0,
-        0.866,
+        1.57675957899434,
         0
       ],
       "rotation": [
         0,
+        1,
         0,
-        0,
-        1
+        -6.123233995736766e-17
       ],
       "scale": [
         11.765,
@@ -1117,7 +1080,7 @@
         "flexDirection": "row",
         "width": 29,
         "height": 5,
-        "text": "PICOTEAR",
+        "text": "Picotear",
         "color": "#ffffff",
         "fontSize": 5,
         "type": "3d",
@@ -1131,20 +1094,20 @@
     "af11f667-ea98-4cdf-b1d4-f7e46ec48579": {
       "id": "af11f667-ea98-4cdf-b1d4-f7e46ec48579",
       "position": [
-        2,
-        0,
-        0.03955612789906704
+        0.8320937954911551,
+        1.040514609170386,
+        0
       ],
       "rotation": [
         0,
+        -0.19080899537654486,
         0,
-        0,
-        1
+        0.9816271834476641
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.8,
+        0.8000000000000002,
+        0.8000000000000002
       ],
       "geometry": null,
       "material": null,
@@ -1152,7 +1115,7 @@
       "ui": {
         "borderColor": "#ffffff",
         "borderWidth": 1,
-        "type": "overlay",
+        "type": "3d",
         "width": 147,
         "height": 36,
         "background": "#0061a9",
@@ -1171,6 +1134,7 @@
         "ignoreRaycast": false,
         "paddingTop": 0,
         "paddingBottom": 0,
+        "flexWrap": "nowrap",
         "position": "absolute",
         "top": "",
         "left": "",
@@ -1191,9 +1155,9 @@
       ],
       "rotation": [
         0,
+        -0.19080899537654486,
         0,
-        0,
-        1
+        0.9816271834476641
       ],
       "scale": [
         1,
@@ -1228,9 +1192,9 @@
       ],
       "rotation": [
         0,
+        -0.19080899537654486,
         0,
-        0,
-        1
+        0.9816271834476641
       ],
       "scale": [
         1,
@@ -1255,26 +1219,26 @@
     "3ee3e46c-a65f-4762-be05-f11a343868e9": {
       "id": "3ee3e46c-a65f-4762-be05-f11a343868e9",
       "position": [
-        2,
-        0,
-        0.03955612789906704
+        0.8320937954911551,
+        1.4405146091703864,
+        0
       ],
       "rotation": [
         0,
+        -0.19080899537654486,
         0,
-        0,
-        1
+        0.9816271834476641
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.8,
+        0.8000000000000002,
+        0.8000000000000002
       ],
       "geometry": null,
       "material": null,
       "components": {
-        "ea2c6801-f70e-456b-ba69-af28eb0fa90d": {
-          "id": "ea2c6801-f70e-456b-ba69-af28eb0fa90d",
+        "b339eb6b-f077-4815-9630-d5c659ec04c0": {
+          "id": "b339eb6b-f077-4815-9630-d5c659ec04c0",
           "name": "FichaInformativa2",
           "parameters": {
             "botonInfo": {
@@ -1284,6 +1248,10 @@
             "ficha": {
               "type": "entity",
               "id": "c1ef6e7c-e420-4a53-9b7b-51a6ec3a9c0f"
+            },
+            "target": {
+              "type": "entity",
+              "id": "d8abfc64-2447-41db-a950-c88115260ce2"
             }
           }
         }
@@ -1291,7 +1259,7 @@
       "ui": {
         "borderColor": "#ffffff",
         "borderWidth": 1,
-        "type": "overlay",
+        "type": "3d",
         "width": 147,
         "height": 36,
         "background": "#0061a9",
@@ -1314,11 +1282,11 @@
         "top": "",
         "left": "",
         "bottom": "",
-        "right": ""
+        "right": "",
+        "stackingOrder": 100
       },
       "name": "Info2",
       "order": 3.395762347890139,
-      "hidden": false,
       "parentId": "d8abfc64-2447-41db-a950-c88115260ce2"
     },
     "64c420f1-91ba-4536-9d5f-033c41fadce6": {
@@ -1355,7 +1323,7 @@
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
         "background": "#ffffff",
-        "ignoreRaycast": true
+        "ignoreRaycast": false
       },
       "order": 4
     },
@@ -1389,7 +1357,7 @@
         "color": "#ffffff",
         "fontSize": 17,
         "verticalTextAlign": "start",
-        "ignoreRaycast": true
+        "ignoreRaycast": false
       },
       "order": 5
     },
@@ -1425,6 +1393,10 @@
             "ficha": {
               "type": "entity",
               "id": "82b7116b-df6d-4808-b2ea-7654b576accb"
+            },
+            "target": {
+              "type": "entity",
+              "id": "d8abfc64-2447-41db-a950-c88115260ce2"
             }
           }
         }
@@ -1437,7 +1409,7 @@
     "17e153e1-688e-4bb4-ac8d-e5e10de37c54": {
       "id": "17e153e1-688e-4bb4-ac8d-e5e10de37c54",
       "position": [
-        -4.040230522887391,
+        0,
         0,
         0
       ],
@@ -1455,8 +1427,8 @@
       "geometry": null,
       "material": null,
       "components": {
-        "738d6765-4352-4822-b5d0-14de66710eab": {
-          "id": "738d6765-4352-4822-b5d0-14de66710eab",
+        "5ebda519-bcbc-4c69-889e-e767be1139e9": {
+          "id": "5ebda519-bcbc-4c69-889e-e767be1139e9",
           "name": "AudioAve",
           "parameters": {
             "boton": {
@@ -1467,8 +1439,8 @@
               "type": "entity",
               "id": "d8abfc64-2447-41db-a950-c88115260ce2"
             },
-            "nombreImageTarget": "Paloma",
-            "audioUrl": "assets\\sonidos\\paloma.mp3"
+            "audioUrl": "assets\\sonidos\\paloma.mp3",
+            "nombreImageTarget": "Paloma"
           }
         }
       },
@@ -1501,8 +1473,8 @@
       "ui": {
         "flexDirection": "column",
         "type": "overlay",
-        "width": 320,
-        "height": 538,
+        "width": 342,
+        "height": 570,
         "image": {
           "type": "asset",
           "asset": "assets/info/Paloma.jpg"
@@ -1512,18 +1484,26 @@
         "stackingOrder": -1,
         "alignItems": "center",
         "justifyContent": "center",
-        "borderRadius": 0,
+        "borderRadius": 122,
         "position": "absolute",
         "top": "",
         "left": "",
         "bottom": "",
         "right": "",
         "margin": "",
-        "marginTop": 54,
-        "marginBottom": 54,
-        "marginLeft": 13,
-        "marginRight": 13,
-        "ignoreRaycast": false
+        "marginTop": 88,
+        "marginBottom": 88,
+        "marginLeft": 10,
+        "marginRight": 10,
+        "ignoreRaycast": true,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "nineSliceBorderTop": -8,
+        "nineSliceBorderBottom": -8,
+        "nineSliceBorderLeft": 52,
+        "nineSliceBorderRight": 52
       },
       "name": "Imagen2",
       "order": 8.4152262863069,
@@ -1533,20 +1513,20 @@
     "bfe601f0-cb6d-42b8-8cc4-7f4d7c97e14f": {
       "id": "bfe601f0-cb6d-42b8-8cc4-7f4d7c97e14f",
       "position": [
-        0.4459006447875655,
-        0.4033928796064308,
-        0.5147326460684789
+        0.3567205158300517,
+        0.32271430368514464,
+        0.8967151052164717
       ],
       "rotation": [
         0,
         0,
         0,
-        1
+        0.9999999999999999
       ],
       "scale": [
-        0.06250000000000003,
-        0.06250000000000003,
-        0.06250000000000003
+        0.050000000000000024,
+        0.050000000000000024,
+        0.050000000000000024
       ],
       "geometry": {
         "type": "sphere",
@@ -1557,42 +1537,42 @@
         "color": "#FFFFFF"
       },
       "components": {
-        "00faf6da-95f1-4940-af33-1d88f594fb42": {
-          "id": "00faf6da-95f1-4940-af33-1d88f594fb42",
-          "name": "hotspot-component",
+        "e4f2d8e5-ea6e-44b8-992d-6980f0d2f4c5": {
+          "id": "e4f2d8e5-ea6e-44b8-992d-6980f0d2f4c5",
+          "name": "garza-component",
           "parameters": {
-            "volarSphere": {
+            "hotspotSphere": {
               "type": "entity",
               "id": "bfe601f0-cb6d-42b8-8cc4-7f4d7c97e14f"
             },
             "birdModel": {
               "type": "entity",
-              "id": "9cfb0a59-0190-44ac-b47a-e902b34871a0"
+              "id": "a78228e0-0b0d-485f-b76d-b89030860621"
             }
           }
         }
       },
-      "name": "Volar (1)",
-      "order": 2.9980255799200735,
-      "parentId": "a78228e0-0b0d-485f-b76d-b89030860621"
+      "name": "Terrestre",
+      "order": 3.9357704397213022,
+      "parentId": "aba2fb53-85f2-4028-b8df-0a243547e116"
     },
     "b959c4f4-917a-4aca-9b5c-400d5ac08296": {
       "id": "b959c4f4-917a-4aca-9b5c-400d5ac08296",
       "position": [
-        3.552713678800501e-15,
-        0.8656825607655732,
+        -5.684341886080802e-14,
+        1.4256731336147555,
         1.0658141036401503e-14
       ],
       "rotation": [
         0,
-        0.7071067811865475,
         0,
-        0.7071067811865476
+        0,
+        1
       ],
       "scale": [
-        11.764705882352933,
-        11.764705882352933,
-        11.764705882352933
+        12,
+        12,
+        12
       ],
       "geometry": null,
       "material": null,
@@ -1602,7 +1582,7 @@
         "flexDirection": "row",
         "width": 23,
         "height": 5,
-        "text": "VUELO",
+        "text": "Comer",
         "color": "#ffffff",
         "fontSize": 5,
         "type": "3d",
@@ -1615,9 +1595,9 @@
     "efc949ba-bc58-4d5f-a974-f026fe80062a": {
       "id": "efc949ba-bc58-4d5f-a974-f026fe80062a",
       "position": [
-        -0.7150047893029337,
+        -0.5720038314423483,
         0,
-        -0.630462271258454
+        0.14669290393711076
       ],
       "rotation": [
         0,
@@ -1626,9 +1606,9 @@
         1
       ],
       "scale": [
-        0.0625,
-        0.0625,
-        0.0625
+        0.05,
+        0.05,
+        0.05
       ],
       "geometry": {
         "type": "sphere",
@@ -1639,42 +1619,42 @@
         "color": "#FFFFFF"
       },
       "components": {
-        "3e72bb02-76e4-4aa8-9753-9ec8dc677682": {
-          "id": "3e72bb02-76e4-4aa8-9753-9ec8dc677682",
-          "name": "circle-hotspot-component",
+        "45e18fd0-8870-4822-bc13-0dbe1b07d6ce": {
+          "id": "45e18fd0-8870-4822-bc13-0dbe1b07d6ce",
+          "name": "garza-vuelo-component",
           "parameters": {
-            "circleCube": {
+            "hotspotVuelo": {
               "type": "entity",
               "id": "efc949ba-bc58-4d5f-a974-f026fe80062a"
             },
             "birdModel": {
               "type": "entity",
-              "id": "9cfb0a59-0190-44ac-b47a-e902b34871a0"
+              "id": "a78228e0-0b0d-485f-b76d-b89030860621"
             }
           }
         }
       },
-      "name": "Caja (1)",
-      "order": 3.4682989224653173,
-      "parentId": "a78228e0-0b0d-485f-b76d-b89030860621"
+      "name": "Aereo",
+      "order": 4.089107690507721,
+      "parentId": "aba2fb53-85f2-4028-b8df-0a243547e116"
     },
     "1ae71c77-1535-4796-b114-3867da0ade03": {
       "id": "1ae71c77-1535-4796-b114-3867da0ade03",
       "position": [
         0,
-        0.866,
+        1.743914853528028,
         0
       ],
       "rotation": [
         0,
-        -0.7071067811865475,
         0,
-        0.7071067811865476
+        0,
+        0.9999999999999998
       ],
       "scale": [
-        11.764705882352937,
-        11.764705882352937,
-        11.764705882352937
+        12.000000000000002,
+        12.000000000000002,
+        12.000000000000002
       ],
       "geometry": null,
       "material": null,
@@ -1684,7 +1664,7 @@
         "flexDirection": "row",
         "width": 23,
         "height": 5,
-        "text": "CIRCULO",
+        "text": "Vuelo",
         "color": "#ffffff",
         "fontSize": 5,
         "type": "3d",
@@ -1697,20 +1677,20 @@
     "be5026b0-3996-441b-9e48-7e6e8db00fdc": {
       "id": "be5026b0-3996-441b-9e48-7e6e8db00fdc",
       "position": [
-        0,
-        0,
+        0.6943109521482356,
+        1.1999999999999993,
         0
       ],
       "rotation": [
         0,
+        -0.12186934340514749,
         0,
-        0,
-        1
+        0.9925461516413223
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.8,
+        0.8,
+        0.8
       ],
       "geometry": null,
       "material": null,
@@ -1718,7 +1698,7 @@
       "ui": {
         "borderColor": "#ffffff",
         "borderWidth": 1,
-        "type": "overlay",
+        "type": "3d",
         "width": 147,
         "height": 36,
         "background": "#0061a9",
@@ -1738,7 +1718,7 @@
         "paddingTop": 0,
         "paddingBottom": 0
       },
-      "name": "Canto (1)",
+      "name": "Canto4",
       "order": 2.6126458878948475,
       "hidden": false,
       "parentId": "aba2fb53-85f2-4028-b8df-0a243547e116"
@@ -1747,14 +1727,14 @@
       "id": "288e57ae-d496-47eb-bbf0-bf75f675f3cd",
       "position": [
         -0.323,
-        0,
+        -0.4,
         0
       ],
       "rotation": [
         0,
+        -0.12186934340514749,
         0,
-        0,
-        1
+        0.9925461516413223
       ],
       "scale": [
         1,
@@ -1784,14 +1764,14 @@
       "id": "c7ad214a-9294-472e-b2a7-a200dfad24df",
       "position": [
         0,
-        0,
+        -0.4,
         0
       ],
       "rotation": [
         0,
+        -0.12186934340514749,
         0,
-        0,
-        1
+        0.9925461516413223
       ],
       "scale": [
         1,
@@ -1816,27 +1796,27 @@
     "513f22cf-393b-4057-8864-2c868da7574c": {
       "id": "513f22cf-393b-4057-8864-2c868da7574c",
       "position": [
-        0,
-        0,
+        0.6943109521482356,
+        1.6,
         0
       ],
       "rotation": [
         0,
+        -0.12186934340514749,
         0,
-        0,
-        1
+        0.9925461516413223
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.8,
+        0.8000000000000002,
+        0.8000000000000002
       ],
       "geometry": null,
       "material": null,
       "components": {
-        "2be73051-fc40-4309-bd2f-6017527554ae": {
-          "id": "2be73051-fc40-4309-bd2f-6017527554ae",
-          "name": "FichaInformativa",
+        "10843ef5-1d51-4d7d-bf2c-f883aeb94487": {
+          "id": "10843ef5-1d51-4d7d-bf2c-f883aeb94487",
+          "name": "FichaInformativa2",
           "parameters": {
             "botonInfo": {
               "type": "entity",
@@ -1845,6 +1825,10 @@
             "ficha": {
               "type": "entity",
               "id": "f53d0e01-c702-425a-a30f-ba36ba1b2c2a"
+            },
+            "target": {
+              "type": "entity",
+              "id": "aba2fb53-85f2-4028-b8df-0a243547e116"
             }
           }
         }
@@ -1852,7 +1836,7 @@
       "ui": {
         "borderColor": "#ffffff",
         "borderWidth": 1,
-        "type": "overlay",
+        "type": "3d",
         "width": 147,
         "height": 36,
         "background": "#0061a9",
@@ -1875,9 +1859,10 @@
         "top": "",
         "left": "",
         "bottom": "",
-        "right": ""
+        "right": "",
+        "stackingOrder": 100
       },
-      "name": "Info (1)",
+      "name": "Info4",
       "order": 2.6975395384148655,
       "hidden": false,
       "parentId": "aba2fb53-85f2-4028-b8df-0a243547e116"
@@ -1983,14 +1968,14 @@
             },
             "reproductor": {
               "type": "entity",
-              "id": "c84b4608-e098-42d7-9eaa-062f1077cd4a"
+              "id": "aba2fb53-85f2-4028-b8df-0a243547e116"
             },
-            "nombreImageTarget": "Guacamaya",
-            "audioUrl": "assets\\sonidos\\guacamaya.mp3"
+            "nombreImageTarget": "Garza",
+            "audioUrl": "assets\\sonidos\\Garza.mp3"
           }
         }
       },
-      "name": "AudioAve1 (2)",
+      "name": "AudioAve4",
       "order": 2.782433188934884,
       "hidden": false,
       "parentId": "aba2fb53-85f2-4028-b8df-0a243547e116"
@@ -2027,15 +2012,25 @@
         },
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
-        "stackingOrder": 100,
+        "stackingOrder": -1,
         "alignItems": "center",
         "justifyContent": "center",
         "borderRadius": 40,
-        "ignoreRaycast": false,
-        "flexWrap": "nowrap"
+        "ignoreRaycast": true,
+        "flexWrap": "nowrap",
+        "position": "absolute",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "margin": "",
+        "marginTop": 89,
+        "marginBottom": 89,
+        "marginLeft": 13,
+        "marginRight": 13
       },
-      "name": "Imagen (2)",
-      "order": 2.8673268394549023,
+      "name": "Imagen4",
+      "order": 2.770000411853342,
       "hidden": true,
       "parentId": "aba2fb53-85f2-4028-b8df-0a243547e116"
     },
@@ -2060,29 +2055,642 @@
       "geometry": null,
       "material": null,
       "components": {
-        "9ad153a4-9ce6-4a13-a664-64715bb02981": {
-          "id": "9ad153a4-9ce6-4a13-a664-64715bb02981",
-          "name": "FichaInformativa",
+        "11a4e962-78a5-496b-86d2-b61edba80d98": {
+          "id": "11a4e962-78a5-496b-86d2-b61edba80d98",
+          "name": "FichaInformativa2",
           "parameters": {
-            "botonInfo": {
-              "type": "entity",
-              "id": "513f22cf-393b-4057-8864-2c868da7574c"
-            },
             "ficha": {
               "type": "entity",
               "id": "38760906-fa07-47ff-8b00-2687165e59e9"
             },
-            "botonCerrar": {
+            "botonInfo": {
               "type": "entity",
               "id": "513f22cf-393b-4057-8864-2c868da7574c"
+            },
+            "target": {
+              "type": "entity",
+              "id": "aba2fb53-85f2-4028-b8df-0a243547e116"
             }
           }
         }
       },
-      "name": "FichaAve1 (2)",
-      "order": 2.9522204899749203,
+      "name": "FichaAve4",
+      "order": 2.7495333775622024,
       "hidden": false,
       "parentId": "aba2fb53-85f2-4028-b8df-0a243547e116"
+    },
+    "b63f8b45-3e9f-4f78-b32e-5a3edfb22d8d": {
+      "id": "b63f8b45-3e9f-4f78-b32e-5a3edfb22d8d",
+      "position": [
+        0.9047590623517294,
+        1.2167031818568597,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.13052619222005166,
+        0,
+        0.9914448613738105
+      ],
+      "scale": [
+        0.8,
+        0.8000000000000002,
+        0.8000000000000002
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "borderColor": "#ffffff",
+        "borderWidth": 1,
+        "type": "3d",
+        "width": 147,
+        "height": 36,
+        "background": "#0061a9",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "margin": "",
+        "marginLeft": 236,
+        "marginRight": 236,
+        "marginTop": 154,
+        "marginBottom": 154,
+        "ignoreRaycast": false,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "position": "absolute",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Canto3",
+      "order": 3.000343033539026,
+      "hidden": false,
+      "parentId": "ba1d47de-40b9-4138-a728-bef6fe121dbe"
+    },
+    "71869022-d26d-4c4b-bb3d-143823296f04": {
+      "id": "71869022-d26d-4c4b-bb3d-143823296f04",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.13052619222005166,
+        0,
+        0.9914448613738105
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b63f8b45-3e9f-4f78-b32e-5a3edfb22d8d",
+      "components": {},
+      "name": "Icono (6)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn-icons-png.flaticon.com/512/715/715015.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "background": "#ffffff"
+      },
+      "order": 1
+    },
+    "ebd43e9f-f78b-49d5-a6a2-df6af7e28110": {
+      "id": "ebd43e9f-f78b-49d5-a6a2-df6af7e28110",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.13052619222005166,
+        0,
+        0.9914448613738105
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b63f8b45-3e9f-4f78-b32e-5a3edfb22d8d",
+      "components": {},
+      "name": "Texto (13)",
+      "ui": {
+        "width": 92,
+        "height": 17,
+        "text": "Canto",
+        "color": "#ffffff",
+        "fontSize": 17,
+        "verticalTextAlign": "start"
+      },
+      "order": 2
+    },
+    "54bdaebf-4dd7-43c7-815a-9ed93044fd43": {
+      "id": "54bdaebf-4dd7-43c7-815a-9ed93044fd43",
+      "position": [
+        0.9047590623517294,
+        1.61670318185686,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.13052619222005166,
+        0,
+        0.9914448613738105
+      ],
+      "scale": [
+        0.8,
+        0.8000000000000002,
+        0.8000000000000002
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "beee643a-fd6c-4e7c-856b-71763e3c3f23": {
+          "id": "beee643a-fd6c-4e7c-856b-71763e3c3f23",
+          "name": "FichaInformativa2",
+          "parameters": {
+            "botonInfo": {
+              "type": "entity",
+              "id": "54bdaebf-4dd7-43c7-815a-9ed93044fd43"
+            },
+            "ficha": {
+              "type": "entity",
+              "id": "e57c77ec-ecbb-40f4-b9e2-0cea16546959"
+            },
+            "target": {
+              "type": "entity",
+              "id": "ba1d47de-40b9-4138-a728-bef6fe121dbe"
+            }
+          }
+        }
+      },
+      "ui": {
+        "borderColor": "#ffffff",
+        "borderWidth": 1,
+        "type": "3d",
+        "width": 147,
+        "height": 36,
+        "background": "#0061a9",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "margin": "",
+        "marginLeft": 236,
+        "marginRight": 236,
+        "marginTop": 109,
+        "marginBottom": 109,
+        "ignoreRaycast": false,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "stackingOrder": 100,
+        "position": "absolute",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Info3",
+      "order": 3.1553780861016483,
+      "hidden": false,
+      "parentId": "ba1d47de-40b9-4138-a728-bef6fe121dbe"
+    },
+    "d1781667-7b47-4188-acd6-37ba4d09b349": {
+      "id": "d1781667-7b47-4188-acd6-37ba4d09b349",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "54bdaebf-4dd7-43c7-815a-9ed93044fd43",
+      "components": {},
+      "name": "Icono (7)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn-icons-png.flaticon.com/512/263/263164.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "background": "#ffffff",
+        "ignoreRaycast": false
+      },
+      "order": 4
+    },
+    "9330af8c-9297-4e39-8522-048e33a6c7fb": {
+      "id": "9330af8c-9297-4e39-8522-048e33a6c7fb",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "54bdaebf-4dd7-43c7-815a-9ed93044fd43",
+      "components": {},
+      "name": "Texto (14)",
+      "ui": {
+        "width": 92,
+        "height": 17,
+        "text": "Informacion",
+        "color": "#ffffff",
+        "fontSize": 17,
+        "verticalTextAlign": "start",
+        "ignoreRaycast": false
+      },
+      "order": 5
+    },
+    "e57c77ec-ecbb-40f4-b9e2-0cea16546959": {
+      "id": "e57c77ec-ecbb-40f4-b9e2-0cea16546959",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        1.232595164407831e-32,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "28f5c967-80e3-4464-906c-d74ccf44f5b9": {
+          "id": "28f5c967-80e3-4464-906c-d74ccf44f5b9",
+          "name": "FichaInformativa2",
+          "parameters": {
+            "botonInfo": {
+              "type": "entity",
+              "id": "54bdaebf-4dd7-43c7-815a-9ed93044fd43"
+            },
+            "ficha": {
+              "type": "entity",
+              "id": "a9c9ce4b-31c7-4fad-a640-312e4acb55f9"
+            },
+            "target": {
+              "type": "entity",
+              "id": "ba1d47de-40b9-4138-a728-bef6fe121dbe"
+            }
+          }
+        }
+      },
+      "name": "FichaAve3",
+      "order": 3.310413138664271,
+      "hidden": false,
+      "parentId": "ba1d47de-40b9-4138-a728-bef6fe121dbe"
+    },
+    "699a86aa-d1a9-4afa-a58b-fa4d7836c356": {
+      "id": "699a86aa-d1a9-4afa-a58b-fa4d7836c356",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        1.232595164407831e-32,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "738d6765-4352-4822-b5d0-14de66710eab": {
+          "id": "738d6765-4352-4822-b5d0-14de66710eab",
+          "name": "AudioAve",
+          "parameters": {
+            "boton": {
+              "type": "entity",
+              "id": "b63f8b45-3e9f-4f78-b32e-5a3edfb22d8d"
+            },
+            "reproductor": {
+              "type": "entity",
+              "id": "ba1d47de-40b9-4138-a728-bef6fe121dbe"
+            },
+            "nombreImageTarget": "Colibri",
+            "audioUrl": "assets\\sonidos\\Colibri.mp3"
+          }
+        }
+      },
+      "name": "AudioAve3",
+      "order": 3.4654481912268933,
+      "hidden": false,
+      "parentId": "ba1d47de-40b9-4138-a728-bef6fe121dbe"
+    },
+    "a9c9ce4b-31c7-4fad-a640-312e4acb55f9": {
+      "id": "a9c9ce4b-31c7-4fad-a640-312e4acb55f9",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        1.232595164407831e-32,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "flexDirection": "column",
+        "type": "overlay",
+        "width": 320,
+        "height": 538,
+        "image": {
+          "type": "asset",
+          "asset": "assets/info/Colibri.jpg"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "stackingOrder": -1,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "borderRadius": 94,
+        "position": "absolute",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "margin": "",
+        "marginTop": 124,
+        "marginBottom": 124,
+        "marginLeft": 13,
+        "marginRight": 13,
+        "ignoreRaycast": true
+      },
+      "name": "Imagen3",
+      "order": 3.620483243789516,
+      "hidden": true,
+      "parentId": "ba1d47de-40b9-4138-a728-bef6fe121dbe"
+    },
+    "4f7f6720-a763-4102-9c4e-cb438b38a92b": {
+      "id": "4f7f6720-a763-4102-9c4e-cb438b38a92b",
+      "position": [
+        0,
+        0,
+        0.7711911653231676
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "ba1d47de-40b9-4138-a728-bef6fe121dbe",
+      "components": {
+        "0fef7802-0391-46a2-a42b-c3beb331674b": {
+          "id": "0fef7802-0391-46a2-a42b-c3beb331674b",
+          "name": "rotacion-modelo-component",
+          "parameters": {
+            "targetEntity": {
+              "type": "entity",
+              "id": "4f7f6720-a763-4102-9c4e-cb438b38a92b"
+            }
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Aves/hummingbird__rigged_6_animations_open_bill.glb"
+        },
+        "animationClip": "01_Hover_Idle_Loop",
+        "loop": true
+      },
+      "name": "hummingbird__rigged_6_animations_open_bill.glb",
+      "order": 0.38419288022815734
+    },
+    "cfbb510f-4a9d-4d01-8a72-c1516fa52b88": {
+      "id": "cfbb510f-4a9d-4d01-8a72-c1516fa52b88",
+      "position": [
+        0.9431330437700094,
+        0.5073600484929507,
+        0.7711911653231674
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.072,
+        0.072,
+        0.072
+      ],
+      "geometry": {
+        "type": "sphere",
+        "radius": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {
+        "1d8cdfea-7b84-4e6e-b8f1-b7af91b8e00a": {
+          "id": "1d8cdfea-7b84-4e6e-b8f1-b7af91b8e00a",
+          "name": "colibri-component",
+          "parameters": {
+            "hotspotSphere": {
+              "type": "entity",
+              "id": "cfbb510f-4a9d-4d01-8a72-c1516fa52b88"
+            },
+            "birdModel": {
+              "type": "entity",
+              "id": "4f7f6720-a763-4102-9c4e-cb438b38a92b"
+            }
+          }
+        }
+      },
+      "name": "Flotar",
+      "order": 4.653767247813649,
+      "parentId": "ba1d47de-40b9-4138-a728-bef6fe121dbe"
+    },
+    "bafe059f-afb7-44f8-a342-63854b5bc9fe": {
+      "id": "bafe059f-afb7-44f8-a342-63854b5bc9fe",
+      "position": [
+        0,
+        1.8000000000000005,
+        0
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        10,
+        10,
+        10
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "cfbb510f-4a9d-4d01-8a72-c1516fa52b88",
+      "components": {},
+      "ui": {
+        "width": 70,
+        "height": 10,
+        "text": "Suspender",
+        "color": "#ffffff",
+        "fontSize": 12,
+        "type": "3d"
+      },
+      "name": "Texto (15)",
+      "order": 1.565340083060878
+    },
+    "593b9338-e1e2-43ea-b718-8d04e663f1f9": {
+      "id": "593b9338-e1e2-43ea-b718-8d04e663f1f9",
+      "position": [
+        -0.8750371287775582,
+        0,
+        0.2292811479055883
+      ],
+      "rotation": [
+        0,
+        -1.1102230246251565e-16,
+        0,
+        1
+      ],
+      "scale": [
+        0.072,
+        0.072,
+        0.072
+      ],
+      "geometry": {
+        "type": "sphere",
+        "radius": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {
+        "f0ec96e9-167b-4fc2-9efc-0de40dbaf51c": {
+          "id": "f0ec96e9-167b-4fc2-9efc-0de40dbaf51c",
+          "name": "colibri-alimentacion-component",
+          "parameters": {
+            "hotspotFlor": {
+              "type": "entity",
+              "id": "593b9338-e1e2-43ea-b718-8d04e663f1f9"
+            },
+            "birdModel": {
+              "type": "entity",
+              "id": "4f7f6720-a763-4102-9c4e-cb438b38a92b"
+            }
+          }
+        }
+      },
+      "name": "Alimentar",
+      "order": 4.687051251837783,
+      "parentId": "ba1d47de-40b9-4138-a728-bef6fe121dbe"
+    },
+    "17e569ce-e29d-4408-9bbf-4b69138234f2": {
+      "id": "17e569ce-e29d-4408-9bbf-4b69138234f2",
+      "position": [
+        0,
+        1.8000000000000005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        10,
+        10,
+        10
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "593b9338-e1e2-43ea-b718-8d04e663f1f9",
+      "components": {},
+      "ui": {
+        "width": 70,
+        "height": 10,
+        "text": "Alimentar",
+        "color": "#ffffff",
+        "fontSize": 12,
+        "type": "3d"
+      },
+      "name": "Alimentar",
+      "order": 1
     }
   },
   "activeCamera": "58bc1039-a0d3-4cc0-a14e-0d2c2c49bbad"
