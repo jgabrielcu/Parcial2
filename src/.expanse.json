@@ -2729,7 +2729,8 @@
         "top": "",
         "left": "10%",
         "bottom": "5%",
-        "right": ""
+        "right": "",
+        "ignoreRaycast": false
       },
       "name": "botonIniciar",
       "order": 4.848807680577286
@@ -2801,8 +2802,8 @@
         "ignoreRaycast": true,
         "gap": 12,
         "position": "absolute",
-        "top": "14%",
-        "left": 0,
+        "top": "",
+        "left": "",
         "bottom": "",
         "right": ""
       },
@@ -2840,7 +2841,7 @@
         "alignItems": "center",
         "justifyContent": "center",
         "flexWrap": "nowrap",
-        "ignoreRaycast": true,
+        "ignoreRaycast": false,
         "gap": 12,
         "position": "absolute",
         "top": "31%",
@@ -3500,6 +3501,215 @@
       },
       "name": "QuizGarza",
       "order": 14.883178167704598
+    },
+    "dd909b92-a80b-46cb-b019-c0bb4b55ec5f": {
+      "id": "dd909b92-a80b-46cb-b019-c0bb4b55ec5f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "36d0b1d9-504a-4b85-8777-a6dcd4e3902b": {
+          "id": "36d0b1d9-504a-4b85-8777-a6dcd4e3902b",
+          "name": "example-component",
+          "parameters": {
+            "menuOverlay": {
+              "type": "entity",
+              "id": "dd909b92-a80b-46cb-b019-c0bb4b55ec5f"
+            },
+            "startButton": {
+              "type": "entity",
+              "id": "eb032b1e-b152-4671-add6-b145e1c8dc9d"
+            }
+          }
+        }
+      },
+      "ui": {
+        "flexDirection": "column",
+        "type": "overlay",
+        "width": "101%",
+        "height": "114%",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Fondo.jpg"
+        },
+        "backgroundOpacity": 1,
+        "position": "absolute",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "backgroundSize": "contain",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0
+      },
+      "name": "Portada",
+      "order": 16.69904968099365
+    },
+    "e5d3ff80-c400-4f5c-ac79-240a8f2e96dd": {
+      "id": "e5d3ff80-c400-4f5c-ac79-240a8f2e96dd",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "dd909b92-a80b-46cb-b019-c0bb4b55ec5f",
+      "components": {},
+      "ui": {
+        "flexDirection": "row",
+        "width": 399,
+        "height": 97,
+        "text": "UAO",
+        "color": "#ffffff",
+        "fontSize": 120,
+        "type": "3d",
+        "margin": "",
+        "marginTop": 0,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Texto (16)",
+      "order": 1.9637734748737437
+    },
+    "7e7094fa-1d41-4e03-a7a7-7cfb156d8043": {
+      "id": "7e7094fa-1d41-4e03-a7a7-7cfb156d8043",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "dd909b92-a80b-46cb-b019-c0bb4b55ec5f",
+      "components": {},
+      "ui": {
+        "width": 394,
+        "height": 10,
+        "text": "aves",
+        "color": "#ffffff",
+        "fontSize": 52,
+        "type": "3d"
+      },
+      "name": "Texto (17)",
+      "order": 3.4535580492104865
+    },
+    "eb032b1e-b152-4671-add6-b145e1c8dc9d": {
+      "id": "eb032b1e-b152-4671-add6-b145e1c8dc9d",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "dd909b92-a80b-46cb-b019-c0bb4b55ec5f",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 170,
+        "height": 36,
+        "background": "#f42525",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "flex-end",
+        "justifyContent": "center",
+        "margin": "",
+        "marginTop": 56,
+        "marginBottom": 56
+      },
+      "name": "Botón",
+      "order": 5.371454640277706
+    },
+    "edf0b471-8753-4620-ab39-212f42e61d0f": {
+      "id": "edf0b471-8753-4620-ab39-212f42e61d0f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "eb032b1e-b152-4671-add6-b145e1c8dc9d",
+      "components": {},
+      "name": "Texto (18)",
+      "ui": {
+        "width": 139,
+        "height": 14,
+        "text": "COMENZAR",
+        "color": "#ffffff",
+        "fontSize": 16
+      },
+      "order": 1.296942992680632
     }
   },
   "activeCamera": "58bc1039-a0d3-4cc0-a14e-0d2c2c49bbad"
