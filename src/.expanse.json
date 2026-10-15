@@ -3553,7 +3553,7 @@
       "ui": {
         "flexDirection": "column",
         "type": "overlay",
-        "width": "101%",
+        "width": "126%",
         "height": "114%",
         "image": {
           "type": "asset",
