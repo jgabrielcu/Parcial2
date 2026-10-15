@@ -3250,7 +3250,8 @@
         }
       },
       "name": "QuizColibri",
-      "order": 10.448564380598386
+      "order": 10.448564380598386,
+      "disabled": true
     },
     "a6584844-5cde-4121-8fa7-be535765eba7": {
       "id": "a6584844-5cde-4121-8fa7-be535765eba7",
@@ -3333,7 +3334,8 @@
         }
       },
       "name": "QuizPaloma",
-      "order": 11.872599923021514
+      "order": 11.872599923021514,
+      "disabled": true
     },
     "93468aa9-9fa3-4a4b-8c04-c40fcd655550": {
       "id": "93468aa9-9fa3-4a4b-8c04-c40fcd655550",
@@ -3416,7 +3418,8 @@
         }
       },
       "name": "QuizGuacamaya",
-      "order": 13.451466057040898
+      "order": 13.451466057040898,
+      "disabled": true
     },
     "653e132a-691a-48a8-8881-982285aee88c": {
       "id": "653e132a-691a-48a8-8881-982285aee88c",
@@ -3499,7 +3502,8 @@
         }
       },
       "name": "QuizGarza",
-      "order": 14.883178167704598
+      "order": 14.883178167704598,
+      "disabled": true
     }
   },
   "activeCamera": "58bc1039-a0d3-4cc0-a14e-0d2c2c49bbad"
