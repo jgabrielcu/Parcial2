@@ -4,50 +4,50 @@ ecs.registerComponent({
   name: 'FichaInformativa2',
 
   schema: {
-    botonInfo: ecs.eid,  // Entidad del Botón "Info2"
-    ficha: ecs.eid,      // GameObject/Entidad de la Ficha ("Imagen (1)")
+    botonInfo: ecs.eid,  // Asigna Info2 en el Inspector
+    ficha: ecs.eid,      // Asigna Imagen (1) en el Inspector
   },
 
   add: (world, component) => {
     const {botonInfo, ficha} = component.schema
 
     if (!botonInfo || !ficha) {
-      console.warn('[FichaInformativa2] Falta asignar botonInfo o ficha en el Inspector.')
+      console.warn('[FichaInformativa2] Debes asignar botonInfo y ficha en el Inspector.')
       return
     }
 
-    // 1. Desactivar / Ocultar el GameObject de la Ficha al iniciar la escena
+    // 1. La ficha siempre arranca oculta
     ecs.Hidden.set(world, ficha, {})
     let isFichaActive = false
 
-    // Función interna para activar / desactivar el GameObject
-    const toggleGameObject = () => {
+    const toggleFicha = () => {
       if (isFichaActive) {
-        // Desactivar GameObject
         ecs.Hidden.set(world, ficha, {})
         isFichaActive = false
-        console.log('[Ficha] GameObject desactivado')
+        console.log('[FichaInformativa2] Ficha ocultada')
       } else {
-        // Activar GameObject
         ecs.Hidden.remove(world, ficha)
         isFichaActive = true
-        console.log('[Ficha] GameObject activado')
+        console.log('[FichaInformativa2] Ficha mostrada')
       }
     }
 
-    // 2. Escuchar el evento de activación al presionar el botón
+    // 2. Escuchar el toque sobre el botón (UI CLICK y Touch Start)
+    world.events.addListener(botonInfo, ecs.input.UI_CLICK, () => {
+      toggleFicha()
+    })
+
     world.events.addListener(component.eid, ecs.input.SCREEN_TOUCH_START, (evt: any) => {
       const touchedEntity = evt.data?.target || evt.target
-
-      // Si se hizo clic sobre el botón Info2
       if (touchedEntity === botonInfo) {
-        toggleGameObject()
+        toggleFicha()
       }
     })
 
-    // Escuchador secundario para UI nativa de 8th Wall Studio
-    world.events.addListener(botonInfo, ecs.input.UI_CLICK, () => {
-      toggleGameObject()
+    // 3. Cuando se pierde el rastreo de cualquier imagen target, cerramos la ficha automáticamente
+    world.events.addListener(component.eid, 'xr:imagelost', () => {
+      ecs.Hidden.set(world, ficha, {})
+      isFichaActive = false
     })
   },
 })
