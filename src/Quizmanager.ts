@@ -6,16 +6,16 @@ const COLOR_BASE = '#2B3A55'
 const COLOR_OK = '#2E9E5B'
 const COLOR_ERROR = '#C0392B'
 
-// Tiempo (ms) que se muestra la retroalimentación antes de pasar a la siguiente pregunta
+// Tiempo (ms) que se muestra la retroalimentacion antes de pasar a la siguiente pregunta
 const TIEMPO_FEEDBACK = 2500
 
 // ---------------------------------------------------------------
 // Estado COMPARTIDO entre todas las instancias del componente
 // (una instancia por ave, todas usando la misma interfaz).
 // ---------------------------------------------------------------
-const visibles = new Set<string>()            // image targets que se están viendo ahora
+const visibles = new Set<string>()            // image targets que se estan viendo ahora
 let quizEnCurso = false                       // hay un quiz corriendo (de cualquier ave)
-let ultimoTerminado: string | null = null     // ave cuyo quiz terminó último (para "Reintentar")
+let ultimoTerminado: string | null = null     // ave cuyo quiz termino ultimo (para "Reintentar")
 
 ecs.registerComponent({
   name: 'QuizManager',
@@ -65,8 +65,8 @@ ecs.registerComponent({
     // Estado propio de esta ave
     let indice = 0
     let puntaje = 0
-    let activo = false      // el quiz de ESTA ave está corriendo
-    let bloqueado = false   // true mientras se muestra la retroalimentación
+    let activo = false      // el quiz de ESTA ave esta corriendo
+    let bloqueado = false   // true mientras se muestra la retroalimentacion
 
     if (preguntas.length === 0) {
       console.warn('[Quiz] No hay preguntas para el target:', nombreImageTarget)
@@ -111,9 +111,9 @@ ecs.registerComponent({
       mostrar(panelFinal)
 
       const ratio = puntaje / preguntas.length
-      let mensaje = 'Sigue explorando el campus, ¡hay muchas más aves por descubrir!'
-      if (ratio === 1) mensaje = '¡Perfecto! Eres un experto en aves de la UAO.'
-      else if (ratio >= 0.6) mensaje = '¡Muy bien! Ya conoces bastante de esta ave.'
+      let mensaje = 'Sigue explorando el campus, hay muchas mas aves por descubrir!'
+      if (ratio === 1) mensaje = 'Perfecto! Eres un experto en aves de la UAO.'
+      else if (ratio >= 0.6) mensaje = 'Muy bien! Ya conoces bastante de esta ave.'
 
       texto(textoFinal, `Puntaje final: ${puntaje}/${preguntas.length}\n${mensaje}`)
       sonido(sfxFinal)
@@ -129,7 +129,7 @@ ecs.registerComponent({
       if (acerto) {
         puntaje += 1
         ecs.Ui.set(world, opciones[i], {background: COLOR_OK})
-        texto(textoFeedback, `¡Correcto! ${p.dato}`)
+        texto(textoFeedback, `Correcto! ${p.dato}`)
         sonido(sfxCorrecto)
       } else {
         ecs.Ui.set(world, opciones[i], {background: COLOR_ERROR})
@@ -164,7 +164,7 @@ ecs.registerComponent({
     ocultar(panelQuiz)
     ocultar(panelFinal)
 
-    // ---------- Detección de image targets ----------
+    // ---------- Deteccion de image targets ----------
     world.events.addListener(
       world.events.globalId,
       'reality.imagefound',
@@ -184,7 +184,7 @@ ecs.registerComponent({
       (event) => {
         const data = event.data as {name: string}
         visibles.delete(data.name)
-        // Si el quiz ya empezó no se interrumpe. El botón se oculta solo
+        // Si el quiz ya empezo no se interrumpe. El boton se oculta solo
         // cuando ya no se ve ninguna tarjeta.
         if (data.name === nombreImageTarget && !quizEnCurso && visibles.size === 0) {
           ocultar(botonIniciar)
@@ -193,7 +193,7 @@ ecs.registerComponent({
     )
 
     // ---------- Botones ----------
-    // Solo responde la instancia del ave que se está viendo / que acaba de terminar.
+    // Solo responde la instancia del ave que se esta viendo / que acaba de terminar.
     world.events.addListener(botonIniciar, ecs.input.UI_CLICK, () => {
       if (visibles.has(nombreImageTarget)) iniciar()
     })
