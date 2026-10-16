@@ -261,7 +261,8 @@
       "name": "seagull__stylized_animated_3d_model.glb",
       "order": 1.5277522373748291,
       "shadow": {
-        "castShadow": true
+        "castShadow": true,
+        "receiveShadow": false
       }
     },
     "9cfb0a59-0190-44ac-b47a-e902b34871a0": {
@@ -3603,7 +3604,7 @@
         "flexDirection": "row",
         "width": 399,
         "height": 97,
-        "text": "UAO",
+        "text": "ECO",
         "color": "#ffffff",
         "fontSize": 120,
         "type": "3d",
