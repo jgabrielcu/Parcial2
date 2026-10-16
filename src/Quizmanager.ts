@@ -59,23 +59,47 @@ ecs.registerComponent({
       sfxCorrecto, sfxIncorrecto, sfxFinal,
     } = component.schema
 
+    // ---------- Diagnóstico: eids sin asignar ----------
+    const campos = {
+      botonIniciar, panelQuiz, textoPregunta, opcionA, opcionB, opcionC,
+      textoFeedback, textoPuntaje, panelFinal, textoFinal, botonReintentar, sfx,
+    }
+    const faltantes = Object.entries(campos).filter(([, v]) => !v).map(([k]) => k)
+    if (faltantes.length > 0) {
+      console.error(`[Quiz:${nombreImageTarget}] FALTA asignar en el Studio:`, faltantes.join(', '))
+      return  // sin esto, los Ui.set sobre un eid vacío rompen el layout
+    }
+
     const preguntas = PREGUNTAS[nombreImageTarget] || []
     const opciones = [opcionA, opcionB, opcionC]
 
     // Estado propio de esta ave
     let indice = 0
     let puntaje = 0
-    let activo = false      // el quiz de ESTA ave esta corriendo
-    let bloqueado = false   // true mientras se muestra la retroalimentacion
+    let activo = false      // el quiz de ESTA ave está corriendo
+    let bloqueado = false   // true mientras se muestra la retroalimentación
 
     if (preguntas.length === 0) {
       console.warn('[Quiz] No hay preguntas para el target:', nombreImageTarget)
     }
 
     // ---------- Utilidades ----------
+    const paso = (nombre: string, fn: () => void) => {
+      try {
+        fn()
+      } catch (e) {
+        console.error(`[Quiz:${nombreImageTarget}] falló en:`, nombre, e)
+      }
+    }
+
     const mostrar = (eid: any) => ecs.Hidden.remove(world, eid)
     const ocultar = (eid: any) => ecs.Hidden.set(world, eid, {})
-    const texto = (eid: any, t: string) => ecs.Ui.set(world, eid, {text: t})
+
+    // Nunca mandamos undefined ni '' al texto (el layout puede fallar al medirlo)
+    const texto = (eid: any, t: string) => {
+      const limpio = t === undefined || t === null || t === '' ? ' ' : String(t)
+      ecs.Ui.set(world, eid, {text: limpio})
+    }
 
     const sonido = (url: string) => {
       ecs.Audio.set(world, sfx, {
@@ -95,12 +119,16 @@ ecs.registerComponent({
     const mostrarPregunta = () => {
       const p = preguntas[indice]
       bloqueado = false
-      texto(textoPregunta, `${indice + 1}/${preguntas.length}  ${p.texto}`)
-      texto(textoFeedback, '')
+      console.log('[Quiz] mostrando pregunta', indice, p)
+
+      paso('texto pregunta', () => texto(textoPregunta, `${indice + 1}/${preguntas.length}  ${p.texto}`))
+      paso('limpiar feedback', () => texto(textoFeedback, ' '))
       opciones.forEach((eid, i) => {
-        ecs.Ui.set(world, eid, {text: p.opciones[i], background: COLOR_BASE})
+        paso(`opcion ${i}`, () => {
+          ecs.Ui.set(world, eid, {text: p.opciones[i] ?? ' ', background: COLOR_BASE})
+        })
       })
-      actualizarPuntaje()
+      paso('puntaje', actualizarPuntaje)
     }
 
     const terminar = () => {
@@ -110,35 +138,43 @@ ecs.registerComponent({
       ocultar(panelQuiz)
       mostrar(panelFinal)
 
-      const ratio = puntaje / preguntas.length
+      const ratio = preguntas.length > 0 ? puntaje / preguntas.length : 0
       let mensaje = 'Sigue explorando el campus, hay muchas mas aves por descubrir!'
       if (ratio === 1) mensaje = 'Perfecto! Eres un experto en aves de la UAO.'
       else if (ratio >= 0.6) mensaje = 'Muy bien! Ya conoces bastante de esta ave.'
 
-      texto(textoFinal, `Puntaje final: ${puntaje}/${preguntas.length}\n${mensaje}`)
-      sonido(sfxFinal)
+      paso('texto final', () => texto(textoFinal, `Puntaje final: ${puntaje}/${preguntas.length}\n${mensaje}`))
+      paso('sonido final', () => sonido(sfxFinal))
     }
 
     const responder = (i: number) => {
-      console.log('[Quiz] toque en opcion', i, 'activo:', activo)
+      console.log('[Quiz] toque en opcion', i, 'activo:', activo, 'bloqueado:', bloqueado)
       if (!activo || bloqueado) return
       bloqueado = true
 
       const p = preguntas[indice]
+      console.log('[Quiz] pregunta actual:', p)
       const acerto = i === p.correcta
+      if (acerto) puntaje += 1
 
-      if (acerto) {
-        puntaje += 1
-        ecs.Ui.set(world, opciones[i], {background: COLOR_OK})
-        texto(textoFeedback, `Correcto! ${p.dato}`)
-        sonido(sfxCorrecto)
-      } else {
-        ecs.Ui.set(world, opciones[i], {background: COLOR_ERROR})
-        ecs.Ui.set(world, opciones[p.correcta], {background: COLOR_OK})
-        texto(textoFeedback, `Casi. La respuesta era "${p.opciones[p.correcta]}". ${p.dato}`)
-        sonido(sfxIncorrecto)
+      paso('color opcion elegida', () => {
+        ecs.Ui.set(world, opciones[i], {background: acerto ? COLOR_OK : COLOR_ERROR})
+      })
+      if (!acerto) {
+        paso('color opcion correcta', () => {
+          ecs.Ui.set(world, opciones[p.correcta], {background: COLOR_OK})
+        })
       }
-      actualizarPuntaje()
+      paso('feedback', () => {
+        texto(
+          textoFeedback,
+          acerto
+            ? `Correcto! ${p.dato ?? ''}`
+            : `Casi. La respuesta era "${p.opciones[p.correcta]}". ${p.dato ?? ''}`
+        )
+      })
+      paso('puntaje', actualizarPuntaje)
+      paso('sonido', () => sonido(acerto ? sfxCorrecto : sfxIncorrecto))
 
       setTimeout(() => {
         indice += 1
@@ -165,7 +201,7 @@ ecs.registerComponent({
     ocultar(panelQuiz)
     ocultar(panelFinal)
 
-    // ---------- Deteccion de image targets ----------
+    // ---------- Detección de image targets ----------
     world.events.addListener(
       world.events.globalId,
       'reality.imagefound',
@@ -185,7 +221,7 @@ ecs.registerComponent({
       (event) => {
         const data = event.data as {name: string}
         visibles.delete(data.name)
-        // Si el quiz ya empezo no se interrumpe. El boton se oculta solo
+        // Si el quiz ya empezó no se interrumpe. El botón se oculta solo
         // cuando ya no se ve ninguna tarjeta.
         if (data.name === nombreImageTarget && !quizEnCurso && visibles.size === 0) {
           ocultar(botonIniciar)
@@ -194,7 +230,6 @@ ecs.registerComponent({
     )
 
     // ---------- Botones ----------
-    // Solo responde la instancia del ave que se esta viendo / que acaba de terminar.
     world.events.addListener(botonIniciar, ecs.input.UI_CLICK, () => {
       if (visibles.has(nombreImageTarget)) iniciar()
     })
